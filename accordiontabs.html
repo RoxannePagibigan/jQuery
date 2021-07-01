@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Accordion and Tabs Widget</title>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.10.3/themes/eggplant/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#accordion').accordion();
+        $('.tabs').tabs();
+    });
+    </script>
+    <style type="text/css">
+    *{
+        margin: auto;
+        padding: 0;
+        }
+        
+    .container{
+        width: 700px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="accordion">
+            <h3>My Information</h3>
+            <div class="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Profile</a></li>
+                    <li><a href="#tabs-2">Dependents & Beneficiaries</a></li>
+                    <li><a href="#tabs-3">Employment</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <h3>Roxanne Pagibigan</h3>
+                    <p>ASSOCIATE ID: 12345678 | Food Prep & Pack Line Team Member</p><br/><br/>
+                    <h3>Personal Info</h3>
+                    <p>12345 96th Ave, Commerce City, CO</p>
+                </div>
+                <div id="tabs-2">
+                    <h3>Name</h3>
+                    <p>Jaytee Pagibigan</p><br/>
+                    <h3>Relations</h3>
+                    <p>Spouse</p><br/>
+                    <h3>Gender</h3>
+                    <p>Male</p>
+                </div>
+                <div id="tabs-3">
+                    <p>Total Absence Management</p>
+                </div>
+            </div>
+            <h3>Time Off</h3>
+            <div class="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Request Time Off</a></li>
+                    <li><a href="#tabs-2">Time Off Balances</a></li>
+                    <li><a href="#tabs-3">List Of Request</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="tabs-2">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                </div>
+            </div>
+            <h3>Time & Attendance</h3>
+            <div>
+                <ul>
+                <li>My Time Entry</li>
+                <li>My Timecard</li>
+                <li>My Schedule</li>
+                </ul>
+            </div>
+            <h3>Pay</h3>
+            <div>
+                <ul>
+                    <li>Annual Statements</li>
+                    <li>Payment Options</li>
+                    <li>Pay Statements</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
