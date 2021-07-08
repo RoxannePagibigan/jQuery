@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Date Validations</title>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <style type="text/css">
+        *{
+            margin: auto;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .container{
+            width: 700px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin-top: 40px;
+            background-color: #1E415E;
+            color: white;
+        }
+        
+        .container h1 {
+            text-align: center;
+            padding: 40px 40px 0px;
+        }
+
+        #wrapper input {
+            border: 1px groove gray;
+            border-radius: 5px;
+            width: 180px;
+            height: 25px;
+            box-shadow: 1px 1px 1px black;
+            display: block;
+            margin: 40px auto;
+        }
+
+        #wrapper button {
+            border: 1px groove gray;
+            border-radius: 5px;
+            width: 180px;
+            height: 25px;
+            box-shadow: 1px 1px 1px black;
+            display: block;
+            margin: 40px auto;
+        }
+
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#fdate, #tdate").datepicker();
+    });
+    
+    $(function() {
+        $("#submitbutton").button();
+        $("#submitbutton").click( function( event ) {
+            var name = $("#submituser").val();
+            var from = $("#fdate").val();
+            var to = $("#tdate").val();
+        event.preventDefault();
+        alert('Thanks '+ name +'! Your cruise leaves on '+ from +' and returns on '+ to +'! ');
+        if(name == "") {
+            $("#submituser").html("Your name can't be blank!")
+        }
+        } );
+    } );
+    
+    </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to the Coding Dojo plan-a-Cruise!</h1>
+            <div id="wrapper">
+                <form>
+                    <input type ="text" id="fdate" placeholder="From: ">
+                    <input type ="text" id="tdate" placeholder=" To:">
+                    <input type ="text" id="submituser" placeholder=" Name: ">
+                    <input type="submit" id="submitbutton" value="Check Dates!">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
